@@ -1,3 +1,75 @@
-h1 {
-  color: brown;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  background-image: url('./assets/img/gory_les_zvezdnoe_nebo_201686_1920x1080.jpg');
+  width: 1440px;
+  height: 500px;
+}
+
+.foto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0;
+}
+.foto h1 {
+  padding: 30px 0;
+  font-size: 40px;
+  font-weight: 300;
+  color: white;
+}
+
+header img {
+  width: 250px;
+  height: 250px;
+  border-radius: 150px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.aboutMe {
+  display: flex;
+}
+.info section {
+  padding: 40px;
+}
+
+.goals,
+.name,
+.data {
+  color: white;
+}
+
+.name h2,
+.goals h2 {
+  font-size: 40px;
+}
+
+.name ul,
+.goals ul,
+.data ul {
+  font-size: 25px;
+}
+
+.aboutMe ul {
+  list-style-type: none;
+}
+
+.data {
+  padding-top: 86px !important;
+}
+
+span {
+  width: 100%;
+  height: 1px;
+  background-color: white;
 }
