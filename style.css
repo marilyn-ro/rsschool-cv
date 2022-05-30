@@ -5,7 +5,7 @@
 
 header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin: 0 auto;
   background-image: url('./assets/img/gory_les_zvezdnoe_nebo_201686_1920x1080.jpg');
   width: 1440px;
@@ -33,10 +33,11 @@ header img {
 
 .info {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
 }
-.aboutMe {
+.about-me {
   display: flex;
 }
 .info section {
@@ -45,7 +46,8 @@ header img {
 
 .goals,
 .name,
-.data {
+.data,
+.header-nav {
   color: white;
 }
 
@@ -56,20 +58,88 @@ header img {
 
 .name ul,
 .goals ul,
-.data ul {
+.data ul,
+.header-nav ul {
   font-size: 25px;
 }
 
-.aboutMe ul {
+.about-me ul,
+.header-nav ul {
   list-style-type: none;
 }
 
 .data {
-  padding-top: 86px !important;
+  padding-top: 105px !important;
 }
 
-span {
-  width: 100%;
+.line {
+  position: absolute;
+  top: 210px;
+  width: 640px;
   height: 1px;
   background-color: white;
+}
+
+.black {
+  background-color: black;
+  width: 1280px;
+  height: 3px;
+  left: -35px;
+  top: 168px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+  width: 300px;
+  height: 460px;
+  border: 1px solid white;
+}
+
+.header-nav ul li {
+  padding-bottom: 50px;
+}
+
+main {
+  display: flex;
+  align-content: flex-start;
+  margin: 0 auto;
+  width: 1434px;
+  /* height: 500px; */
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 3px solid black;
+}
+
+main ul {
+  list-style-type: none;
+  font-size: 25px;
+}
+
+main h2 {
+  font-size: 30px;
+  color: lightseagreen;
+}
+
+main section {
+  padding: 50px 0 0 0;
+  width: 500px;
+  margin: 10px;
+}
+
+main img {
+  width: 30px;
+  height: 30px;
+}
+
+.education,
+.skills {
+  position: relative;
+}
+
+.skills .black {
+  top: 250px;
 }
