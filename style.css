@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -37,9 +38,11 @@ header img {
   flex-direction: column;
   justify-content: center;
 }
+
 .about-me {
   display: flex;
 }
+
 .info section {
   padding: 40px;
 }
@@ -80,21 +83,14 @@ header img {
   background-color: white;
 }
 
-.black {
-  background-color: black;
-  width: 1280px;
-  height: 3px;
-  left: -35px;
-  top: 168px;
-}
-
 .header-nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 17px;
+  padding-top: 29px;
   width: 300px;
-  height: 460px;
+  height: 430px;
   border: 1px solid white;
 }
 
@@ -108,19 +104,20 @@ main {
   margin: 0 auto;
   width: 1434px;
   /* height: 500px; */
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
   border: 3px solid black;
+  background-image: url(./assets/img/backgroung.jpeg);
 }
 
 main ul {
   list-style-type: none;
-  font-size: 25px;
+  font-size: 36px;
 }
 
 main h2 {
-  font-size: 30px;
+  font-size: 45px;
   color: lightseagreen;
 }
 
@@ -131,15 +128,55 @@ main section {
 }
 
 main img {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
 }
 
 .education,
-.skills {
+.skills,
+.workexpirience {
   position: relative;
 }
 
 .skills .black {
   top: 250px;
+}
+
+.personal-qualities,
+.languages,
+.my-hobbies,
+.skills,
+.experience,
+.education {
+  position: relative;
+}
+
+.underline::after {
+  content: '';
+  position: absolute;
+  bottom: 178px;
+  width: 420px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: black;
+}
+
+.education .underline::after,
+.experience .underline::after {
+  bottom: 95px;
+}
+
+.languages .underline::after,
+.personal-qualities .underline::after {
+  bottom: 217px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: goldenrod;
 }
