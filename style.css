@@ -8,9 +8,9 @@ header {
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
-  background-image: url('./assets/img/gory_les_zvezdnoe_nebo_201686_1920x1080.jpg');
   width: 1440px;
   height: 500px;
+  background-image: url('./assets/img/gory_les_zvezdnoe_nebo_201686_1920x1080.jpg');
 }
 
 .foto {
@@ -39,10 +39,10 @@ h1 {
 
 .contact {
   display: flex;
+  justify-content: space-between;
+  flex-direction: row;
   margin-top: 9px;
   width: 279px;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 header img {
@@ -57,10 +57,10 @@ header p {
 
 .info {
   display: flex;
-  position: relative;
   flex-direction: column;
   justify-content: center;
   width: 530px;
+  position: relative;
 }
 
 .about-me {
@@ -127,11 +127,11 @@ header p {
 main {
   display: flex;
   align-content: flex-start;
-  margin: 0 auto;
-  width: 1434px;
   justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 0 auto;
+  width: 1434px;
   border: 3px solid #000000;
   background-image: url(./assets/img/backgroung.jpeg);
 }
