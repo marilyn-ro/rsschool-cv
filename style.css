@@ -1,3 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 1440px;
+  height: 500px;
+  background-image: url('./assets/img/gory_les_zvezdnoe_nebo_201686_1920x1080.jpg');
+}
+
+.foto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  margin-top: 17px;
+  width: 300px;
+  height: 438px;
+  border: 1px dashed #fff;
+  border-radius: 0px 20px 30px;
+}
+
 h1 {
-  color: brown;
+  padding: 15px 0;
+  font-size: 40px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.foto h2 {
+  display: flex;
+  text-shadow: 3px 3px #000000;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 9px;
+  width: 279px;
+}
+
+header img {
+  width: 250px;
+  height: 250px;
+  border-radius: 150px;
+}
+
+header p {
+  font-size: 25px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 530px;
+  position: relative;
+}
+
+.about-me {
+  display: flex;
+  color: #fff;
+}
+
+.info section {
+  padding: 40px;
+}
+
+.goals,
+.name,
+.data,
+.header-nav,
+.foto {
+  color: #fff;
+}
+
+.goals h2,
+.about-me h2 {
+  font-size: 40px;
+}
+
+.goals ul,
+.header-nav ul {
+  font-size: 25px;
+}
+
+.header-nav ul,
+.contact ul {
+  list-style-type: none;
+}
+
+.contact ul {
+  font-size: 17px;
+  text-shadow: 3px 3px #000000;
+}
+
+.line {
+  position: absolute;
+  top: 240px;
+  width: 633px;
+  height: 1px;
+  background-color: #fff;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 17px;
+  padding-top: 29px;
+  width: 300px;
+  height: 430px;
+  border: 1px solid #fff;
+  border-radius: 0px 20px 30px;
+}
+
+.header-nav ul li {
+  padding-bottom: 50px;
+}
+
+main {
+  display: flex;
+  align-content: flex-start;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 1434px;
+  border: 3px solid #000000;
+  background-image: url(./assets/img/backgroung.jpeg);
+}
+
+main ul {
+  list-style-type: none;
+  font-size: 36px;
+}
+
+main h2 {
+  font-size: 45px;
+  color: #20b2aa;
+}
+
+main section {
+  padding: 50px 0 0 0;
+  width: 500px;
+  margin: 10px;
+}
+
+main img {
+  width: 35px;
+  height: 35px;
+}
+
+.education,
+.skills,
+.workexpirience {
+  position: relative;
+}
+
+.skills .black {
+  top: 250px;
+}
+
+.personal-qualities,
+.languages,
+.my-hobbies,
+.skills,
+.experience,
+.education {
+  position: relative;
+}
+
+.underline::after {
+  content: '';
+  position: absolute;
+  bottom: 178px;
+  width: 420px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #000000;
+}
+
+.education .underline::after,
+.experience .underline::after {
+  bottom: 95px;
+}
+
+.languages .underline::after,
+.personal-qualities .underline::after {
+  bottom: 217px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #daa520;
+}
+
+footer {
+  display: flex;
+  align-content: flex-start;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+  width: 1434px;
+  border-bottom: 3px solid #000000;
+  border-left: 3px solid #000000;
+  border-right: 3px solid #000000;
+  background-color: #4682b4;
+}
+
+footer img {
+  width: 100px;
+  height: 100px;
+}
+
+footer p {
+  font-size: 30px;
 }
