@@ -1,1 +1,1 @@
-# rsschool-cv
+https://marilyn-ro.github.io/rsschool-cv/
